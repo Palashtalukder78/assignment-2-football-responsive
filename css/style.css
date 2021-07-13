@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    width: 80%;
+    width: 78%;
     padding-top: 42px;
     padding-bottom: 86px;
     margin: auto;
@@ -19,6 +19,9 @@ button{
     border: 1px solid #E02C6D;
     background: #E02C6D;
     color: #ffffff;
+}
+i{
+    font-size: 16px;
 }
 button .left-side-icon{
     margin-right: 10px;
@@ -32,7 +35,7 @@ COMMON STYLES END
 
 
 /* ------------------------------------
-TOP-AREA/BANNER SECTION START
+1ST SECTION STYLES START
 ------------------------------------*/
 .top-area{
     background-color: #2D25A0;
@@ -79,5 +82,33 @@ TOP-AREA/BANNER SECTION START
     height: 438px;
 }
 /* ------------------------------------
-TOP-AREA/BANNER SECTION END
+1ST SECTION STYLES END
 ------------------------------------*/
+
+/* ------------------------------------
+2ND SECTION STYLES START
+------------------------------------*/
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid #f3eded;
+    box-shadow: 5px 5px 40px 5px #ebdddd;
+}
+.player img{
+    width: 305px;
+    height: 256px;
+}
+.player-name h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 16px 0 10px 0;
+    text-align: left;
+}
