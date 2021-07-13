@@ -19,6 +19,7 @@ button{
     border: 1px solid #E02C6D;
     background: #E02C6D;
     color: #ffffff;
+    cursor: pointer;
 }
 i{
     font-size: 16px;
@@ -100,7 +101,7 @@ COMMON STYLES END
     justify-content: center;
     padding: 15px;
     border: 1px solid #f3eded;
-    box-shadow: 5px 5px 40px 5px #ebdddd;
+    box-shadow: 5px 5px 40px 5px #e7e1e1;
 }
 .player img{
     width: 305px;
@@ -111,4 +112,11 @@ COMMON STYLES END
     font-weight: 700;
     margin: 16px 0 10px 0;
     text-align: left;
+}
+.player-info article{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6C6C6C;
+    text-align: justify;
 }
