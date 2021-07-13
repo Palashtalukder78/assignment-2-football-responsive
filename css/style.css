@@ -13,6 +13,12 @@ body{
     padding-bottom: 86px;
     margin: auto;
 }
+article{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6C6C6C;
+}
 button{
     font-size: 16px;
     padding: 10px 24px;
@@ -93,13 +99,13 @@ COMMON STYLES END
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 30px;
-    row-gap: 27px;
+    row-gap: 27px; 
 }
 .player{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #f3eded;
     box-shadow: 5px 5px 40px 5px #e7e1e1;
 }
@@ -113,13 +119,35 @@ COMMON STYLES END
     margin: 16px 0 10px 0;
     text-align: left;
 }
-.player-info article{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #6C6C6C;
-    text-align: justify;
-}
+
 /* ------------------------------------
 2ND SECTION STYLES END
+------------------------------------*/
+
+/* ------------------------------------
+3rd SECTION STYLES START
+------------------------------------*/
+.highlight-football{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+}
+.highlight-area{
+    display: flex;
+    flex-direction: column;
+}
+.highlight-info h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.highlight-info button{
+    margin-top: 24px;
+}
+.highlight-photo img{
+    width: 567px;
+    height: 427px;
+} 
+/* ------------------------------------
+3rd SECTION STYLES END
 ------------------------------------*/
