@@ -28,7 +28,6 @@ button{
     cursor: pointer;
     transition: 1s;
 }
-
 i{
     font-size: 16px;
 }
@@ -41,45 +40,6 @@ button .right-side-icon{
 /* ------------------------------------
 COMMON STYLES END
 ------------------------------------*/
-
-/* ------------------------------------
-Side Social STYLES START
-------------------------------------*/
-.side-social{
-    position: fixed;
-    top: 230px;
-}
-.side-social ul{
-    position: relative;
-    left: -60px;
-}
-.side-social  li{
-    list-style: none;
-    width: 20px;
-    border-radius: 0 10px 10px 0;
-    background-color: red;
-    margin: 10px;
-    padding: 5px 10px;
-    transition: .5s ;
-}
-
-.side-social i{
-    font-size: 25px;
-    color: #fff;
-    transition: .5s ;
-}
-.side-social li:hover{
-    width: 35px;
-    background-color: blue;
-}
-.side-social li:hover i{
-    font-size: 40px;
-    color: rgb(224, 204, 204)
-}
-/* ------------------------------------
-Side Social STYLES END
-------------------------------------*/
-
 
 /* ------------------------------------
 1ST SECTION STYLES START
@@ -107,6 +67,9 @@ Side Social STYLES END
     text-decoration: none;
     color: #ffffff;
 }
+.btn button:hover{
+    background-color: #2d25a0;
+}
 .banner{
     display: grid;
     margin-top: 50px;
@@ -133,14 +96,80 @@ Side Social STYLES END
 .banner-area img{
     width: 556px;
     height: 438px;
-    transition: 1s;
+    transition: transform 2s ease-out 0.2s;
 }
 .banner-area img:hover{
-    transform: rotate(90deg);
+    transform: rotate(360deg);
 }
+
+/* For simple animation  Start*/
+@keyframes sliding {
+    0%{
+        left: 0;
+        top: -700px;
+    }
+    50%{
+        top: 0px;
+    }
+    100%{
+        left: 100%;
+        top: -700px;
+    }
+}
+.stage{
+    width: 96%;
+}
+.football{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 0;
+    right: 0;
+    animation: sliding 5s ease-in-out .5s infinite alternate;
+    animation-play-state: running;
+}
+/* Simple Animation end  */
 /* ------------------------------------
 1ST SECTION STYLES END
 ------------------------------------*/
+
+/* ------------------------------------
+Side Social STYLES START
+------------------------------------*/
+.side-social{
+    position: fixed;
+    top: 230px;
+}
+.side-social ul{
+    position: relative;
+    left: -60px;
+}
+.side-social  li{
+    list-style: none;
+    width: 20px;
+    border-radius: 0 10px 10px 0;
+    background-color: #E02C6D;
+    margin: 11px;
+    padding: 5px 10px;
+    transition: .5s ;
+}
+.side-social i{
+    font-size: 25px;
+    color: #fff;
+    transition: .5s ;
+}
+.side-social li:hover{
+    width: 35px;
+    background-color: blue;
+}
+.side-social li:hover i{
+    font-size: 40px;
+    color: rgb(224, 204, 204)
+}
+/* ------------------------------------
+Side Social STYLES END
+------------------------------------*/
+
 
 /* ------------------------------------
 2ND SECTION STYLES START
@@ -186,7 +215,6 @@ Side Social STYLES END
     display: flex;
     flex-direction: column;
 }
-
 .highlight-info h2{
     font-size: 48px;
     font-weight: 700;
@@ -204,7 +232,6 @@ Side Social STYLES END
 3rd SECTION STYLES END
 ------------------------------------*/
 
-
 /*------------------------------------
 CONTACT SECTION STYLES START
 ------------------------------------*/
@@ -215,7 +242,6 @@ CONTACT SECTION STYLES START
 .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    
 }
 .contact-details{
     display: flex;
@@ -287,6 +313,11 @@ fOOTER SECTION STYLES START
     padding: 14px;
     border-radius: 50%;
     margin-right: 10px;
+    transition: 1s;
+}
+.social-icon i:hover{
+    background-color: #10437A;
+    color: #ffffff;
 }
 .footer-info > .social-icon img{
     width: 32px;
@@ -294,12 +325,12 @@ fOOTER SECTION STYLES START
     margin-bottom: 12px;
 }
 /*------------------------------------
-fOOTER SECTION STYLES END
+FOOTER SECTION STYLES END
 ------------------------------------*/
 
 
 /* ------------------------
-Media Query 
+Media Query  Start
 --------------------------*/
 
 /* Mobile Device Start*/
@@ -308,8 +339,8 @@ Media Query
         width: 90%;
     }
     button{
-        font-size: 24px;
-        padding: 18px 32px;
+        font-size: 20px;
+        padding: 15px 27px;
         border: 1px solid #E02C6D;
         background: #E02C6D;
         color: #ffffff;
@@ -325,7 +356,9 @@ Media Query
     }
     .banner-info h2{
         margin-top: 0;
-        font-size: 50;
+        font-size: 45px;
+        font-weight: 700;
+        margin: 0;
     }
     .banner-photo img{
         width: 100%;
@@ -347,6 +380,9 @@ Media Query
     .highlight-photo img{
         width: 100%;
         height: auto;
+    }
+    .highlight-info h2{
+        font-size: 30px;
     }
     .contact-photo img{
         display: none;
@@ -393,4 +429,7 @@ Media Query
     }
 
 }
+/* ------------------------
+Media Query  Start
+--------------------------*/
 
