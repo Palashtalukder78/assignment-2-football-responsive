@@ -238,8 +238,10 @@ Media Query
     .container{
         width: 90%;
     }
-    nav{
-        visibility: none;
+    .navigation-area{
+        display: none;
+        position: absolute;
+
     }
     .banner, .players, .highlight-football, .contact{
         grid-template-columns: repeat(1,1fr);
@@ -247,13 +249,32 @@ Media Query
     .banner-area{
         margin-top: 15px;
     }
+    .banner-photo img{
+        width: 100%;
+        height: auto;
+    }
     .player{
         align-items: center;
         padding: 20px 20px;
     }
+    .player img{
+        width: 100%;
+        height: auto;
+    }
     .highlight-area{
         justify-content: center;
         margin: 10px 0;
+    }
+    .highlight-photo img{
+        width: 100%;
+        height: auto;
+    }
+    .contact-photo img{
+        display: none;
+    }
+    .footer-info > .logo img{
+        width: 100%;
+        height: auto;
     }
 }
 /* Movile Device End*/
