@@ -232,6 +232,30 @@ Side Social STYLES END
 3rd SECTION STYLES END
 ------------------------------------*/
 
+/* ------------------------------------
+Videos STYLES Start
+------------------------------------*/
+.youtube-videos h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+}
+.video{
+    display: flex;
+}
+
+
+/* ------------------------------------
+Videos STYLES Start
+------------------------------------*/
+
+
 /*------------------------------------
 CONTACT SECTION STYLES START
 ------------------------------------*/
@@ -351,7 +375,7 @@ Media Query  Start
         display: none;
         position: absolute;
     }
-    .banner, .players, .highlight-football, .contact{
+    .banner, .players, .highlight-football, .contact, .videos{
         grid-template-columns: repeat(1,1fr);
     }
     .banner-info h2{
@@ -380,9 +404,13 @@ Media Query  Start
     .highlight-photo img{
         width: 100%;
         height: auto;
+        padding-left: 0 !important;
     }
     .highlight-info h2{
         font-size: 30px;
+    }
+    .video{
+        margin-top: 20px;
     }
     .contact-photo img{
         display: none;
@@ -392,9 +420,13 @@ Media Query  Start
         height: auto;
     }
 }
-/* ------------------------------------ Mobile Device End ------------------------------------*/
+/* ------------------------------------ 
+Mobile Device End 
+------------------------------------*/
 
-/* -----------------------------------Tablet device Start ------------------------------------*/
+/* -----------------------------------
+Tablet device Start 
+------------------------------------*/
 @media only screen and (min-width:688px) and (max-width:992px){
     .container{
         width: 90%;
@@ -430,6 +462,6 @@ Media Query  Start
 
 }
 /* ------------------------
-Media Query  Start
+Media Query  END
 --------------------------*/
 
