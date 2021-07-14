@@ -26,7 +26,9 @@ button{
     background: #E02C6D;
     color: #ffffff;
     cursor: pointer;
+    transition: 1s;
 }
+
 i{
     font-size: 16px;
 }
@@ -38,6 +40,44 @@ button .right-side-icon{
 }
 /* ------------------------------------
 COMMON STYLES END
+------------------------------------*/
+
+/* ------------------------------------
+Side Social STYLES START
+------------------------------------*/
+.side-social{
+    position: fixed;
+    top: 230px;
+}
+.side-social ul{
+    position: relative;
+    left: -60px;
+}
+.side-social  li{
+    list-style: none;
+    width: 20px;
+    border-radius: 0 10px 10px 0;
+    background-color: red;
+    margin: 10px;
+    padding: 5px 10px;
+    transition: .5s ;
+}
+
+.side-social i{
+    font-size: 25px;
+    color: #fff;
+    transition: .5s ;
+}
+.side-social li:hover{
+    width: 35px;
+    background-color: blue;
+}
+.side-social li:hover i{
+    font-size: 40px;
+    color: rgb(224, 204, 204)
+}
+/* ------------------------------------
+Side Social STYLES END
 ------------------------------------*/
 
 
@@ -83,6 +123,12 @@ COMMON STYLES END
     line-height: 80px;
     color: #ffffff;
     margin-bottom: 27px;
+}
+.banner-info> button:hover{
+    font-size: 26px;
+    padding: 20px 34px;
+    border: 1px solid #d17798;
+    background: #d17798;
 }
 .banner-area img{
     width: 556px;
@@ -160,14 +206,13 @@ CONTACT SECTION STYLES START
 ------------------------------------*/
 .contact-form > .container{
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 20px;
 }
 .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
 }
-
 .contact-details{
     display: flex;
     align-items: center;
@@ -284,4 +329,5 @@ Media Query
         height: auto;
     }
 }
-/* Movile Device End*/
+/* Mobile Device End*/
+
