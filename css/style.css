@@ -136,6 +136,7 @@ COMMON STYLES END
     display: flex;
     flex-direction: column;
 }
+
 .highlight-info h2{
     font-size: 48px;
     font-weight: 700;
@@ -147,7 +148,37 @@ COMMON STYLES END
 .highlight-photo img{
     width: 567px;
     height: 427px;
-} 
+    padding-left: 20px;
+}  
 /* ------------------------------------
 3rd SECTION STYLES END
 ------------------------------------*/
+
+/*------------------------------------
+fOOTER SECTION STYLES START
+------------------------------------*/
+.footer-section > .container{
+    padding-bottom: 63px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info > .logo img{
+    width: 483px;
+    height: 110px;
+}
+.footer-info > .social-icon a{
+    padding: 5px;
+}
+.footer-info > .social-icon img{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
