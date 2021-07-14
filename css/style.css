@@ -133,6 +133,10 @@ Side Social STYLES END
 .banner-area img{
     width: 556px;
     height: 438px;
+    transition: 1s;
+}
+.banner-area img:hover{
+    transform: rotate(90deg);
 }
 /* ------------------------------------
 1ST SECTION STYLES END
@@ -303,6 +307,15 @@ Media Query
     .container{
         width: 90%;
     }
+    button{
+        font-size: 24px;
+        padding: 18px 32px;
+        border: 1px solid #E02C6D;
+        background: #E02C6D;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 1s;
+    }
     .navigation-area{
         display: none;
         position: absolute;
@@ -312,6 +325,7 @@ Media Query
     }
     .banner-info h2{
         margin-top: 0;
+        font-size: 50;
     }
     .banner-photo img{
         width: 100%;
@@ -342,9 +356,9 @@ Media Query
         height: auto;
     }
 }
-/* Mobile Device End*/
+/* ------------------------------------ Mobile Device End ------------------------------------*/
 
-/* Tablet device Start  */
+/* -----------------------------------Tablet device Start ------------------------------------*/
 @media only screen and (min-width:688px) and (max-width:992px){
     .container{
         width: 90%;
@@ -364,13 +378,14 @@ Media Query
         height: auto;
     }
     .highlight-info h2{
-        font-size: 38px;
+        font-size: 32px;
     }
     .highlight-photo img{
-        width: 90%;
+        width: 100%;
         height: auto;
         justify-content: center;
         align-items: center;
+        padding-top: 92px;
     }
     .contact-photo img{
         width: 90%;
