@@ -154,6 +154,48 @@ COMMON STYLES END
 3rd SECTION STYLES END
 ------------------------------------*/
 
+
+/*------------------------------------
+CONTACT SECTION STYLES START
+------------------------------------*/
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-photo img{
+    width: 567px;
+    height: 427px;
+}
+.form{
+    display: flex;
+    border: 1px solid #ebd8d8;
+    width: 100%;
+    padding:20px 35px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 40px 5px #e7e1e1;
+}
+.form h2{
+    font-size: 28px;
+    text-align: center;
+}
+.form input,textarea,btn{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 0px 5px 10px;
+    border: 1px solid #e0d5d5;
+    border-radius: 10px;
+    font-size: 15px;
+}
+/*------------------------------------
+CONTACT SECTION STYLES START
+------------------------------------*/
+
+
 /*------------------------------------
 fOOTER SECTION STYLES START
 ------------------------------------*/
@@ -182,3 +224,36 @@ fOOTER SECTION STYLES START
     height: 32px;
     margin-bottom: 12px;
 }
+/*------------------------------------
+fOOTER SECTION STYLES END
+------------------------------------*/
+
+
+/* ------------------------
+Media Query 
+--------------------------*/
+
+/* Movile Device Start*/
+@media only screen and (max-width:688px){
+    .container{
+        width: 90%;
+    }
+    nav{
+        visibility: none;
+    }
+    .banner, .players, .highlight-football, .contact{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner-area{
+        margin-top: 15px;
+    }
+    .player{
+        align-items: center;
+        padding: 20px 20px;
+    }
+    .highlight-area{
+        justify-content: center;
+        margin: 10px 0;
+    }
+}
+/* Movile Device End*/
